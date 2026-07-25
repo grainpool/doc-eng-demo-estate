@@ -1,0 +1,76 @@
+{
+  "entries": [
+    {
+      "id": "files.list.empty",
+      "kind": "empty_state",
+      "text": "No files yet. Upload a CSV to begin.",
+      "surface_location": "FileList/empty state"
+    },
+    {
+      "id": "files.list.loading",
+      "kind": "label",
+      "text": "Loading files…",
+      "surface_location": "FileList/loading state"
+    },
+    {
+      "id": "files.table.name",
+      "kind": "label",
+      "text": "Name",
+      "surface_location": "FileList/table header"
+    },
+    {
+      "id": "files.table.size",
+      "kind": "label",
+      "text": "Size",
+      "surface_location": "FileList/table header"
+    },
+    {
+      "id": "files.table.rows",
+      "kind": "label",
+      "text": "Rows",
+      "surface_location": "FileList/table header"
+    },
+    {
+      "id": "files.table.columns",
+      "kind": "label",
+      "text": "Columns",
+      "surface_location": "FileList/table header"
+    },
+    {
+      "id": "files.table.uploaded",
+      "kind": "label",
+      "text": "Uploaded",
+      "surface_location": "FileList/table header"
+    },
+    {
+      "id": "uploader.help",
+      "kind": "tooltip",
+      "text": "Upload a .csv or .tsv file up to {max_size_human}.",
+      "surface_location": "FileUploader/help text"
+    },
+    {
+      "id": "uploader.button",
+      "kind": "label",
+      "text": "Upload file",
+      "surface_location": "FileUploader/submit button"
+    },
+    {
+      "id": "uploader.choose",
+      "kind": "label",
+      "text": "Choose file",
+      "surface_location": "FileUploader/file input label"
+    },
+    {
+      "id": "uploader.uploading",
+      "kind": "label",
+      "text": "Uploading…",
+      "surface_location": "FileUploader/busy state"
+    },
+    {
+      "id": "uploader.success",
+      "kind": "validation",
+      "text": "File uploaded.",
+      "surface_location": "FileUploader/success banner"
+    }
+  ]
+}

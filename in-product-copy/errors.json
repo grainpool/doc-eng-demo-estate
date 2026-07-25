@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "id": "error.upload.too_large",
+      "kind": "error",
+      "text": "This file is larger than the {max_size_human} upload limit.",
+      "surface_location": "FileUploader/rejection banner"
+    },
+    {
+      "id": "error.upload.unsupported_type",
+      "kind": "error",
+      "text": "That file type isn't supported. Upload a .csv or .tsv file.",
+      "surface_location": "FileUploader/rejection banner"
+    },
+    {
+      "id": "error.upload.missing_file",
+      "kind": "validation",
+      "text": "Choose a file to upload.",
+      "surface_location": "FileUploader/rejection banner"
+    },
+    {
+      "id": "error.validation.required_field",
+      "kind": "validation",
+      "text": "This field is required.",
+      "surface_location": "forms/inline field error"
+    },
+    {
+      "id": "error.generic.not_found",
+      "kind": "error",
+      "text": "That wasn't found. It may have been removed.",
+      "surface_location": "any screen/error banner"
+    },
+    {
+      "id": "error.generic.internal",
+      "kind": "error",
+      "text": "Something went wrong on our side. Try again in a moment.",
+      "surface_location": "any screen/error banner"
+    },
+    {
+      "id": "error.generic.network",
+      "kind": "error",
+      "text": "Relay couldn't be reached. Check your connection and try again.",
+      "surface_location": "any screen/error banner"
+    }
+  ]
+}

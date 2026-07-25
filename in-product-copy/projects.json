@@ -1,0 +1,82 @@
+{
+  "entries": [
+    {
+      "id": "app.title",
+      "kind": "label",
+      "text": "Relay",
+      "surface_location": "AppHeader/title"
+    },
+    {
+      "id": "projects.list.title",
+      "kind": "label",
+      "text": "Projects",
+      "surface_location": "ProjectList/heading"
+    },
+    {
+      "id": "projects.list.empty",
+      "kind": "empty_state",
+      "text": "No projects yet. Create your first project to get started.",
+      "surface_location": "ProjectList/empty state"
+    },
+    {
+      "id": "projects.list.loading",
+      "kind": "label",
+      "text": "Loading projects…",
+      "surface_location": "ProjectList/loading state"
+    },
+    {
+      "id": "projects.create.open",
+      "kind": "label",
+      "text": "New project",
+      "surface_location": "ProjectList/create button"
+    },
+    {
+      "id": "projects.create.name_label",
+      "kind": "label",
+      "text": "Name",
+      "surface_location": "CreateProject/name field"
+    },
+    {
+      "id": "projects.create.description_label",
+      "kind": "label",
+      "text": "Description (optional)",
+      "surface_location": "CreateProject/description field"
+    },
+    {
+      "id": "projects.create.submit",
+      "kind": "label",
+      "text": "Create project",
+      "surface_location": "CreateProject/submit button"
+    },
+    {
+      "id": "projects.create.cancel",
+      "kind": "label",
+      "text": "Cancel",
+      "surface_location": "CreateProject/cancel button"
+    },
+    {
+      "id": "projects.detail.back",
+      "kind": "label",
+      "text": "← All projects",
+      "surface_location": "ProjectDetail/back link"
+    },
+    {
+      "id": "projects.detail.files_heading",
+      "kind": "label",
+      "text": "Files",
+      "surface_location": "ProjectDetail/files heading"
+    },
+    {
+      "id": "projects.state.active",
+      "kind": "label",
+      "text": "Active",
+      "surface_location": "ProjectList/state badge"
+    },
+    {
+      "id": "projects.state.archived",
+      "kind": "label",
+      "text": "Archived",
+      "surface_location": "ProjectList/state badge"
+    }
+  ]
+}
