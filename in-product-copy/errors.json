@@ -127,6 +127,26 @@
       "owner": "product-content",
       "editorial_register": "terse_ui",
       "interpolations": []
+    },
+    {
+      "id": "error.analysis.budget_exhausted",
+      "kind": "error",
+      "text": "Relay has used its analysis budget for today. Try again tomorrow.",
+      "surface_location": "session/error banner",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "error.analysis.rate_limited",
+      "kind": "error",
+      "text": "Too many analysis requests from your connection. Wait a bit and try again.",
+      "surface_location": "session/error banner",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "friendly_help",
+      "interpolations": []
     }
   ]
 }
