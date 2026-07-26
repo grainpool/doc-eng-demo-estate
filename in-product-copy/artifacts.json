@@ -1,0 +1,100 @@
+{
+  "entries": [
+    {
+      "id": "artifacts.list.heading",
+      "kind": "label",
+      "text": "Artifacts",
+      "surface_location": "ProjectDetail/artifacts section"
+    },
+    {
+      "id": "artifacts.list.empty",
+      "kind": "empty_state",
+      "text": "No artifacts yet. Every analysis result is saved here with its full origin.",
+      "surface_location": "ProjectDetail/artifacts section"
+    },
+    {
+      "id": "artifact.back",
+      "kind": "label",
+      "text": "Back to project",
+      "surface_location": "ArtifactDetail/header"
+    },
+    {
+      "id": "artifact.download",
+      "kind": "label",
+      "text": "Download",
+      "surface_location": "ArtifactDetail/actions"
+    },
+    {
+      "id": "artifact.provenance.heading",
+      "kind": "label",
+      "text": "Where this came from",
+      "surface_location": "ArtifactDetail/provenance"
+    },
+    {
+      "id": "artifact.provenance.source_file",
+      "kind": "label",
+      "text": "Source file",
+      "surface_location": "ArtifactDetail/provenance"
+    },
+    {
+      "id": "artifact.provenance.operation",
+      "kind": "label",
+      "text": "Operation",
+      "surface_location": "ArtifactDetail/provenance"
+    },
+    {
+      "id": "artifact.provenance.params",
+      "kind": "label",
+      "text": "Parameters",
+      "surface_location": "ArtifactDetail/provenance"
+    },
+    {
+      "id": "artifact.provenance.versions",
+      "kind": "label",
+      "text": "Package versions at computation",
+      "surface_location": "ArtifactDetail/provenance"
+    },
+    {
+      "id": "artifact.provenance.generated",
+      "kind": "label",
+      "text": "Generated {generated_at} in {duration_ms} ms",
+      "surface_location": "ArtifactDetail/provenance"
+    },
+    {
+      "id": "artifact.retention",
+      "kind": "feature_availability",
+      "text": "Kept until {expires_at} ({days}-day artifact retention).",
+      "surface_location": "ArtifactDetail/retention"
+    },
+    {
+      "id": "artifact.lineage.heading",
+      "kind": "label",
+      "text": "Lineage",
+      "surface_location": "ArtifactDetail/lineage"
+    },
+    {
+      "id": "artifact.lineage.none",
+      "kind": "empty_state",
+      "text": "Computed directly from the source file.",
+      "surface_location": "ArtifactDetail/lineage"
+    },
+    {
+      "id": "session.turn.artifacts",
+      "kind": "label",
+      "text": "Saved artifacts:",
+      "surface_location": "Session/turn result"
+    },
+    {
+      "id": "session.chain.label",
+      "kind": "label",
+      "text": "Run on:",
+      "surface_location": "Session/prompt box"
+    },
+    {
+      "id": "session.chain.original",
+      "kind": "label",
+      "text": "the uploaded file",
+      "surface_location": "Session/prompt box"
+    }
+  ]
+}
