@@ -37,6 +37,24 @@
       "surface_location": "any screen/error banner"
     },
     {
+      "id": "error.analysis.kernel_unavailable",
+      "kind": "error",
+      "text": "The analysis engine is unavailable right now. Try again in a moment.",
+      "surface_location": "analysis/error banner"
+    },
+    {
+      "id": "error.analysis.invalid_params",
+      "kind": "validation",
+      "text": "Those analysis settings aren't valid for this operation.",
+      "surface_location": "analysis/error banner"
+    },
+    {
+      "id": "error.analysis.kernel_rejected",
+      "kind": "error",
+      "text": "The analysis engine couldn't run that on this file.",
+      "surface_location": "analysis/error banner"
+    },
+    {
       "id": "error.generic.network",
       "kind": "error",
       "text": "Relay couldn't be reached. Check your connection and try again.",
