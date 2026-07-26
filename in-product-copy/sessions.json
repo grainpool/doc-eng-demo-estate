@@ -1,0 +1,112 @@
+{
+  "entries": [
+    {
+      "id": "session.open",
+      "kind": "label",
+      "text": "Analyze",
+      "surface_location": "ProjectDetail/file row action"
+    },
+    {
+      "id": "session.list.heading",
+      "kind": "label",
+      "text": "Analysis sessions",
+      "surface_location": "ProjectDetail/sessions section"
+    },
+    {
+      "id": "session.list.empty",
+      "kind": "empty_state",
+      "text": "No analysis sessions yet. Pick a file and ask a question about it.",
+      "surface_location": "ProjectDetail/sessions section"
+    },
+    {
+      "id": "session.back",
+      "kind": "label",
+      "text": "Back to project",
+      "surface_location": "Session/header"
+    },
+    {
+      "id": "session.preview.heading",
+      "kind": "label",
+      "text": "Dataset preview",
+      "surface_location": "Session/preview table"
+    },
+    {
+      "id": "session.preview.loading",
+      "kind": "label",
+      "text": "Loading preview…",
+      "surface_location": "Session/preview table"
+    },
+    {
+      "id": "session.prompt.placeholder",
+      "kind": "label",
+      "text": "Ask about this data — e.g. \"which columns correlate?\"",
+      "surface_location": "Session/prompt box"
+    },
+    {
+      "id": "session.prompt.submit",
+      "kind": "label",
+      "text": "Run",
+      "surface_location": "Session/prompt box"
+    },
+    {
+      "id": "session.prompt.running",
+      "kind": "label",
+      "text": "Translating and running…",
+      "surface_location": "Session/prompt box"
+    },
+    {
+      "id": "session.turns.empty",
+      "kind": "empty_state",
+      "text": "No questions asked yet.",
+      "surface_location": "Session/turn list"
+    },
+    {
+      "id": "session.turn.operation_label",
+      "kind": "label",
+      "text": "Ran {operation_id}",
+      "surface_location": "Session/turn result header"
+    },
+    {
+      "id": "session.turn.refused_heading",
+      "kind": "label",
+      "text": "Not supported",
+      "surface_location": "Session/turn refusal"
+    },
+    {
+      "id": "session.turn.alternatives",
+      "kind": "label",
+      "text": "Supported instead: {alternatives}",
+      "surface_location": "Session/turn refusal"
+    },
+    {
+      "id": "session.turn.failed_heading",
+      "kind": "label",
+      "text": "This question failed",
+      "surface_location": "Session/turn error"
+    },
+    {
+      "id": "session.result.truncated",
+      "kind": "label",
+      "text": "Showing the first rows — the full result was truncated.",
+      "surface_location": "Session/result table"
+    },
+    {
+      "id": "session.result.plot_alt",
+      "kind": "label",
+      "text": "Generated {kind} plot",
+      "surface_location": "Session/result plot"
+    },
+    {
+      "id": "session.narrate",
+      "kind": "label",
+      "text": "Explain these numbers",
+      "surface_location": "Session/turn result"
+    },
+    {
+      "id": "session.narrating",
+      "kind": "label",
+      "text": "Summarizing…",
+      "surface_location": "Session/turn result"
+    }
+  ]
+}

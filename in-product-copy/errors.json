@@ -55,6 +55,18 @@
       "surface_location": "analysis/error banner"
     },
     {
+      "id": "error.analysis.unsupported_request",
+      "kind": "error",
+      "text": "That can't be run as one of Relay's analysis operations.",
+      "surface_location": "session/turn refusal banner"
+    },
+    {
+      "id": "error.analysis.model_unavailable",
+      "kind": "error",
+      "text": "The language model is unavailable right now. Try again in a moment.",
+      "surface_location": "session/error banner"
+    },
+    {
       "id": "error.generic.network",
       "kind": "error",
       "text": "Relay couldn't be reached. Check your connection and try again.",
