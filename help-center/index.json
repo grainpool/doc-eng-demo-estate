@@ -1,0 +1,24 @@
+{
+  "collections": [
+    {
+      "id": "uploads",
+      "title": "Uploading data",
+      "articles": ["upload-failed", "supported-file-types", "file-size-help"]
+    },
+    {
+      "id": "analysis",
+      "title": "Running analyses",
+      "articles": ["run-an-analysis", "working-with-artifacts", "using-the-cli"]
+    },
+    {
+      "id": "account",
+      "title": "Plans, platforms & retention",
+      "articles": ["platform-availability", "plans-and-permissions", "how-long-things-are-kept"]
+    },
+    {
+      "id": "reference",
+      "title": "Reference",
+      "articles": ["what-the-terms-mean"]
+    }
+  ]
+}

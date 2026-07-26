@@ -1,0 +1,29 @@
+---
+title: "Security & privacy"
+description: "What runs where: the sandboxed kernel, capability URLs, and what Relay never does with your data."
+owner: "docs"
+---
+
+## No code execution
+
+The analysis kernel exposes eight named operations and nothing else. There
+is no endpoint that accepts code, an expression, a file path, or a URL. The
+language model routes questions; it never authors anything the kernel runs.
+
+## How data reaches the kernel
+
+The kernel downloads your file through a signed, single-use-style capability
+URL that expires after 60 seconds, verifies the file's SHA-256 against the
+value recorded at upload, and enforces the size cap while reading — an
+oversized object is abandoned mid-download, not parsed.
+
+## Logging
+
+Relay logs request metadata, never file contents, prompts, or completions.
+Model calls are recorded as token counts and a prompt hash.
+
+## Data location
+
+Files and artifacts live in object storage under your deployment's account;
+metadata lives in the deployment's database. Deleting a project is not yet a
+product feature — retention windows govern expiry instead.

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Relay Docs",
+  "description": "Relay is a bounded data-analysis workspace: upload a CSV, ask questions in plain language, get statistics with full provenance.",
+  "colors": {
+    "primary": "#556b2f"
+  },
+  "markdown": {
+    "instructions": "Facts on these pages (limits, availability, versions, retention) mirror Relay's product-truth API. Treat pages marked GENERATED as derived artifacts: do not quote them as sources — cite the fact key instead. Terminology: a unit of analysis work is a Task; outputs are Artifacts."
+  },
+  "navigation": {
+    "$ref": "./navigation.json"
+  }
+}

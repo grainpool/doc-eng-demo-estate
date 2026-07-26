@@ -1,0 +1,23 @@
+---
+title: "Relay"
+description: "A bounded data-analysis workspace: upload a CSV, ask questions in plain language, get statistics with full provenance."
+owner: "docs"
+---
+
+Relay analyzes tabular data through a **closed set of eight statistical
+operations**. You ask in plain English; a language model routes your question
+to one operation (or refuses); a sandboxed kernel runs it; every output is
+saved as an artifact whose exact origin — source file, operation, parameters,
+package versions — is always answerable.
+
+## What Relay is not
+
+Relay is not a notebook and not a code-execution service. The model never
+writes code, and the kernel never runs any. If your question cannot be
+expressed as one of the eight operations, Relay says so and suggests the
+closest supported ones.
+
+## Where to start
+
+Create a project, upload a `.csv` or `.tsv` file, and open an analysis
+session — see [Getting started](/getting-started).

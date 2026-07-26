@@ -1,0 +1,28 @@
+---
+title: "Artifacts & provenance"
+description: "Every analysis output is durable, downloadable, and fully traceable to its origin."
+owner: "docs"
+---
+
+Every completed turn persists its outputs: plots as PNG, tables as CSV,
+scalars as JSON, plus an operation record capturing the exact
+`{operation_id, params}` that ran. An artifact cannot exist without complete
+provenance — the invariant is enforced in the storage schema itself.
+
+## What provenance answers
+
+Which source file (id and content hash), which operation, which parameters,
+which package versions were installed at the moment of computation, when it
+ran, and how long it took. Versions are captured from the kernel response
+that produced the numbers — never looked up after the fact.
+
+## Lineage
+
+When a turn runs on a previous result table, the new artifacts record the
+parent artifact id. The artifact page shows the chain.
+
+## Retention
+
+{/* concord:fact key=retention.artifact.days */}
+Artifacts are retained for 30 days after creation; the expiry date is shown
+on the artifact page.

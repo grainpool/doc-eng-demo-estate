@@ -1,0 +1,27 @@
+---
+title: "Configuration"
+description: "Relay's configurable behavior: retention, plans, and feature flags."
+owner: "docs"
+---
+
+Relay keeps configuration deliberately small. Values on this page mirror the
+product configuration that the application itself reads.
+
+## Retention
+
+{/* concord:fact key=retention.uploaded_file.days */}
+Uploaded files are retained for 30 days.
+Artifact retention is covered in
+[Artifacts & provenance](/artifacts-and-provenance).
+
+## Plans
+
+{/* concord:fact key=plan.feature.analysis_sessions.min_plan */}
+Analysis sessions are included in the free plan. The Drive connector, when
+enabled, requires the team plan.
+
+## Flags
+
+Regression analysis can be disabled operationally; when the flag is off,
+`linear_regression` refuses with a clear error rather than disappearing from
+the catalog.

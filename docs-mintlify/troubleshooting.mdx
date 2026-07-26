@@ -1,0 +1,30 @@
+---
+title: "Troubleshooting"
+description: "Common failures — uploads, refusals, kernel availability — and what to do about each."
+owner: "docs"
+---
+
+## My upload was rejected
+
+Two distinct rejections exist: unsupported type (only `.csv` and `.tsv` are
+accepted) and size (see [Supported files](/supported-files) for the limit).
+The error message names which one you hit.
+
+## Relay refused my question
+
+The eight-operation catalog is closed by design. A refusal lists supported
+alternatives; rephrasing toward one of them usually succeeds. Refusals are
+not errors — they are the feature working.
+
+## "The analysis engine is unavailable"
+
+The kernel cold-starts after idle periods; the first question can take a few
+extra seconds, and a transient failure is retried once automatically. If the
+error persists, check the deployment's health page.
+
+## Why does the app say iOS is unsupported when the changelog announced it?
+
+The 1.5.0 iOS launch was rolled back after release. Release notes record
+history; configuration records the present. When they disagree, the
+configuration is correct — a standing decision record documents this
+tie-break.

@@ -1,0 +1,33 @@
+---
+title: "Getting started"
+description: "Create a project, upload a file, and run your first plain-language analysis."
+owner: "docs"
+---
+
+## Before you begin
+
+You need a data file in `.csv` or `.tsv` format. Excel workbooks must be
+exported to CSV first — see [Supported files](/supported-files).
+
+## 1. Create a project
+
+Open Relay and choose **New project**. A Project is the container for files,
+analysis sessions, and artifacts.
+
+## 2. Upload a file
+
+Use the uploader on the project page. Relay validates the file type and size
+before accepting anything, and records the row and column counts it verified
+during the upload.
+
+## 3. Ask a question
+
+Click **Analyze** next to the file. Type a question such as
+"which columns correlate?" — Relay translates it into exactly one bounded
+operation, runs it in the analysis kernel, and shows the result with a link
+to the saved artifact.
+
+## 4. Chain a result
+
+Any result table can be the input of your next question: pick it under
+**Run on:** before submitting. The artifact's lineage records the chain.

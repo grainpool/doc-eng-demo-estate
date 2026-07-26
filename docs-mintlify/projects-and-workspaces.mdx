@@ -1,0 +1,21 @@
+---
+title: "Projects and workspaces"
+description: "How Relay organizes files, sessions, and artifacts inside projects."
+owner: "docs"
+---
+
+A **Project** holds everything about one dataset investigation: uploaded
+files, analysis sessions, and the artifacts those sessions produce.
+
+## Terminology
+
+{/* concord:fact key=term.canonical.task */}
+A unit of analysis work is a **Task**. Tasks run inside a Project; their
+outputs are **Artifacts**. These names are canonical across the product, the
+CLI, and this documentation — see [Terminology](/terminology).
+
+## Lifecycle
+
+Projects are `active` by default. Archiving is cosmetic: nothing is deleted,
+and artifacts keep their own retention schedule (see
+[Artifacts & provenance](/artifacts-and-provenance)).

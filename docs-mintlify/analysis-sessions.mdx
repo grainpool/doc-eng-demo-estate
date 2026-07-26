@@ -1,0 +1,29 @@
+---
+title: "Analysis sessions"
+description: "Plain-language questions routed to one of eight bounded statistical operations."
+owner: "docs"
+---
+
+An analysis session binds one project file to a conversation. Each turn takes
+a plain-language prompt and resolves it to **exactly one** operation from the
+closed catalog — or refuses with alternatives.
+
+## The eight operations
+
+`inspect_schema`, `summary_statistics`, `filter_rows`, `group_aggregate`,
+`correlation_matrix`, `linear_regression`, `distribution_test`, and `plot`.
+The catalog is a closed enum: the model cannot invent a ninth operation, and
+parameters are validated twice (before and inside the kernel) before
+anything runs.
+
+## Refusals
+
+Requests outside the catalog — training models, joining datasets, fetching
+URLs — are refused with a short reason and up to three supported
+alternatives. A refusal is recorded on the session like any other turn.
+
+## Narration
+
+After a completed turn you can ask Relay to explain the numbers. The
+narration is generated only from the result payload; it cannot introduce
+values that are not in the result.

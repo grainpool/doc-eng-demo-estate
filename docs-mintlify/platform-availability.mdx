@@ -1,0 +1,25 @@
+---
+title: "Platform & feature availability"
+description: "Which Relay features are available on web, CLI, iOS, and Android."
+owner: "docs"
+---
+
+## Analysis sessions
+
+{/* concord:fact key=availability.feature.analysis_sessions.platform.web */}
+Analysis sessions are available on **web** and the **CLI**. They are not
+available on iOS or Android: the mobile launch announced in release 1.5.0
+was rolled back, and configuration is authoritative — see the decision
+record referenced in [Troubleshooting](/troubleshooting).
+
+## Drive connector
+
+The Drive connector is not available on any platform yet. Its availability
+facts exist so documentation and configuration cannot silently disagree
+when it ships.
+
+## The generated matrix
+
+The machine-readable availability matrix lives on the
+generated pages and is regenerated from configuration — this prose page
+explains; the matrix asserts.

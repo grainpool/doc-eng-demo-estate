@@ -1,0 +1,39 @@
+{
+  "tabs": [
+    {
+      "tab": "Documentation",
+      "groups": [
+        {
+          "group": "Get started",
+          "pages": ["index", "getting-started", "projects-and-workspaces"]
+        },
+        {
+          "group": "Analysis",
+          "pages": [
+            "analysis-sessions",
+            "artifacts-and-provenance",
+            "supported-files"
+          ]
+        },
+        {
+          "group": "CLI",
+          "pages": ["cli-overview", "cli-reference"]
+        },
+        {
+          "group": "Reference",
+          "pages": [
+            "configuration",
+            "security-and-privacy",
+            "platform-availability",
+            "troubleshooting",
+            "terminology"
+          ]
+        },
+        {
+          "group": "Changes",
+          "$ref": "./navigation-generated.json"
+        }
+      ]
+    }
+  ]
+}

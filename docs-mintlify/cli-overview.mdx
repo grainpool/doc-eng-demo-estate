@@ -1,0 +1,25 @@
+---
+title: "CLI overview"
+description: "The relay command line: projects, files, sessions, and artifacts from your terminal."
+owner: "docs"
+---
+
+The `relay` CLI targets scripted and CI usage. It talks to the same API as
+the web app and returns machine-readable JSON with `--json`.
+
+## Install and first run
+
+The CLI ships from the Relay repository (`packages/relay-cli`); build it and
+run `relay --help`. Every command has its own `--help` with examples.
+
+## Exit codes
+
+Exit codes are contractual: `0` ok, `1` unexpected, `2` usage error,
+`3` auth failure, `4` not found, `5` validation failure,
+`6` remote unavailable. Scripts can rely on them.
+
+## Introspection
+
+`relay introspect --json` emits the full command surface — paths, flags,
+usage text, examples — derived from the live command tree. The
+[CLI reference](/cli-reference) is generated from that output.
