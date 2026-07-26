@@ -156,6 +156,18 @@
       "editorial_register": "terse_ui",
       "text": "CSV or TSV",
       "surface_location": "FileUploader/type hint tooltip"
+    },
+    {
+      "id": "uploader.limit_note",
+      "kind": "label",
+      "text": "Files up to 10 MB are supported.",
+      "surface_location": "FileUploader/limit note",
+      "references_facts": [
+        "limit.upload.csv.max_bytes"
+      ],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     }
   ]
 }

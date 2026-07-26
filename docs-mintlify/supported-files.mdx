@@ -1,0 +1,20 @@
+---
+title: "Supported files"
+description: "Which file types Relay accepts and the size limits that apply."
+owner: "docs"
+---
+
+Relay analyzes delimited text files. This page states the mechanical limits;
+for guidance on preparing a file, see the help center.
+
+## Size limits
+
+{/* concord:fact key=limit.upload.csv.max_bytes */}
+Maximum file size: 10 MB. Files over the limit are rejected before upload
+with a clear error, not truncated.
+
+## Supported types
+
+Relay accepts `.csv` (comma-separated) and `.tsv` (tab-separated) files.
+Excel workbooks (`.xlsx`) are not supported — this is a deliberate product
+decision, not a missing feature: export a single sheet to CSV first.
