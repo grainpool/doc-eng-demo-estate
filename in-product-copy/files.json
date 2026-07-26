@@ -4,73 +4,158 @@
       "id": "files.list.empty",
       "kind": "empty_state",
       "text": "No files yet. Upload a CSV to begin.",
-      "surface_location": "FileList/empty state"
+      "surface_location": "FileList/empty state",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "files.list.loading",
       "kind": "label",
       "text": "Loading files…",
-      "surface_location": "FileList/loading state"
+      "surface_location": "FileList/loading state",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "files.table.name",
       "kind": "label",
       "text": "Name",
-      "surface_location": "FileList/table header"
+      "surface_location": "FileList/table header",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "files.table.size",
       "kind": "label",
       "text": "Size",
-      "surface_location": "FileList/table header"
+      "surface_location": "FileList/table header",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "files.table.rows",
       "kind": "label",
       "text": "Rows",
-      "surface_location": "FileList/table header"
+      "surface_location": "FileList/table header",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "files.table.columns",
       "kind": "label",
       "text": "Columns",
-      "surface_location": "FileList/table header"
+      "surface_location": "FileList/table header",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "files.table.uploaded",
       "kind": "label",
       "text": "Uploaded",
-      "surface_location": "FileList/table header"
+      "surface_location": "FileList/table header",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "uploader.help",
       "kind": "tooltip",
       "text": "Upload a .csv or .tsv file up to {max_size_human}.",
-      "surface_location": "FileUploader/help text"
+      "surface_location": "FileUploader/help text",
+      "references_facts": [
+        "limit.upload.csv.max_bytes"
+      ],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": [
+        "max_size_human"
+      ]
     },
     {
       "id": "uploader.button",
       "kind": "label",
       "text": "Upload file",
-      "surface_location": "FileUploader/submit button"
+      "surface_location": "FileUploader/submit button",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "uploader.choose",
       "kind": "label",
       "text": "Choose file",
-      "surface_location": "FileUploader/file input label"
+      "surface_location": "FileUploader/file input label",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "uploader.uploading",
       "kind": "label",
       "text": "Uploading…",
-      "surface_location": "FileUploader/busy state"
+      "surface_location": "FileUploader/busy state",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "uploader.success",
       "kind": "validation",
       "text": "File uploaded.",
-      "surface_location": "FileUploader/success banner"
+      "surface_location": "FileUploader/success banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "references_facts": [],
+      "owner": "product-content",
+      "interpolations": [],
+      "id": "tooltip.upload_limit",
+      "kind": "tooltip",
+      "editorial_register": "terse_ui",
+      "text": "Max 10 MB",
+      "surface_location": "FileUploader/size hint tooltip"
+    },
+    {
+      "references_facts": [],
+      "owner": "product-content",
+      "interpolations": [],
+      "id": "tooltip.row_limit",
+      "kind": "tooltip",
+      "editorial_register": "terse_ui",
+      "text": "Up to 50,000 rows",
+      "surface_location": "FileUploader/row hint tooltip"
+    },
+    {
+      "references_facts": [
+        "support.file_type.csv",
+        "support.file_type.tsv"
+      ],
+      "owner": "product-content",
+      "interpolations": [],
+      "id": "tooltip.supported_types",
+      "kind": "tooltip",
+      "editorial_register": "terse_ui",
+      "text": "CSV or TSV",
+      "surface_location": "FileUploader/type hint tooltip"
     }
   ]
 }

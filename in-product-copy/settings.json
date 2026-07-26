@@ -1,0 +1,67 @@
+{
+  "entries": [
+    {
+      "references_facts": [
+        "retention.artifact.days"
+      ],
+      "owner": "product",
+      "interpolations": [],
+      "id": "settings.retention.artifacts",
+      "kind": "setting_description",
+      "editorial_register": "technical_reference",
+      "text": "Analysis artifacts are retained for 30 days after creation, then expire.",
+      "surface_location": "Settings/retention section"
+    },
+    {
+      "references_facts": [],
+      "owner": "product",
+      "interpolations": [],
+      "id": "settings.retention.uploads",
+      "kind": "setting_description",
+      "editorial_register": "technical_reference",
+      "text": "Uploaded files are retained for 30 days.",
+      "surface_location": "Settings/retention section"
+    },
+    {
+      "references_facts": [
+        "availability.feature.analysis_sessions.platform.web",
+        "availability.feature.analysis_sessions.platform.cli",
+        "availability.feature.analysis_sessions.platform.ios",
+        "availability.feature.analysis_sessions.platform.android"
+      ],
+      "owner": "product",
+      "interpolations": [],
+      "id": "settings.availability.sessions",
+      "kind": "feature_availability",
+      "editorial_register": "technical_reference",
+      "text": "Analysis sessions are available on web and CLI. iOS and Android are not supported.",
+      "surface_location": "Settings/platforms section"
+    },
+    {
+      "references_facts": [
+        "plan.feature.analysis_sessions.min_plan"
+      ],
+      "owner": "product",
+      "interpolations": [],
+      "id": "settings.plan.sessions",
+      "kind": "feature_availability",
+      "editorial_register": "technical_reference",
+      "text": "Analysis sessions are included in the free plan.",
+      "surface_location": "Settings/plan section"
+    },
+    {
+      "references_facts": [
+        "term.canonical.task",
+        "term.canonical.project",
+        "term.canonical.artifact"
+      ],
+      "owner": "product-content",
+      "interpolations": [],
+      "id": "settings.terminology",
+      "kind": "setting_description",
+      "editorial_register": "technical_reference",
+      "text": "Relay calls a unit of analysis work a Task inside a Project; outputs are Artifacts.",
+      "surface_location": "Settings/terminology section"
+    }
+  ]
+}

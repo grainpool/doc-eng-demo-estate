@@ -4,79 +4,154 @@
       "id": "app.title",
       "kind": "label",
       "text": "Relay",
-      "surface_location": "AppHeader/title"
+      "surface_location": "AppHeader/title",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.list.title",
       "kind": "label",
       "text": "Projects",
-      "surface_location": "ProjectList/heading"
+      "surface_location": "ProjectList/heading",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.list.empty",
       "kind": "empty_state",
       "text": "No projects yet. Create your first project to get started.",
-      "surface_location": "ProjectList/empty state"
+      "surface_location": "ProjectList/empty state",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.list.loading",
       "kind": "label",
       "text": "Loading projects…",
-      "surface_location": "ProjectList/loading state"
+      "surface_location": "ProjectList/loading state",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.create.open",
       "kind": "label",
       "text": "New project",
-      "surface_location": "ProjectList/create button"
+      "surface_location": "ProjectList/create button",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.create.name_label",
       "kind": "label",
       "text": "Name",
-      "surface_location": "CreateProject/name field"
+      "surface_location": "CreateProject/name field",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.create.description_label",
       "kind": "label",
       "text": "Description (optional)",
-      "surface_location": "CreateProject/description field"
+      "surface_location": "CreateProject/description field",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.create.submit",
       "kind": "label",
       "text": "Create project",
-      "surface_location": "CreateProject/submit button"
+      "surface_location": "CreateProject/submit button",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.create.cancel",
       "kind": "label",
       "text": "Cancel",
-      "surface_location": "CreateProject/cancel button"
+      "surface_location": "CreateProject/cancel button",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.detail.back",
       "kind": "label",
       "text": "← All projects",
-      "surface_location": "ProjectDetail/back link"
+      "surface_location": "ProjectDetail/back link",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.detail.files_heading",
       "kind": "label",
       "text": "Files",
-      "surface_location": "ProjectDetail/files heading"
+      "surface_location": "ProjectDetail/files heading",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.state.active",
       "kind": "label",
       "text": "Active",
-      "surface_location": "ProjectList/state badge"
+      "surface_location": "ProjectList/state badge",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "projects.state.archived",
       "kind": "label",
       "text": "Archived",
-      "surface_location": "ProjectList/state badge"
+      "surface_location": "ProjectList/state badge",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "references_facts": [],
+      "owner": "product-content",
+      "interpolations": [],
+      "id": "onboarding.welcome",
+      "kind": "onboarding",
+      "editorial_register": "friendly_help",
+      "text": "Welcome to Relay. Create a project, upload a CSV, and ask questions about your data in plain language.",
+      "surface_location": "ProjectList/first-run banner"
+    },
+    {
+      "references_facts": [
+        "support.file_type.csv",
+        "support.file_type.tsv"
+      ],
+      "owner": "product-content",
+      "interpolations": [],
+      "id": "onboarding.first_upload",
+      "kind": "onboarding",
+      "editorial_register": "friendly_help",
+      "text": "Start by uploading a .csv or .tsv file — Relay checks the type and size for you.",
+      "surface_location": "ProjectDetail/first-run hint"
     }
   ]
 }

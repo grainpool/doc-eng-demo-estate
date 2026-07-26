@@ -4,61 +4,113 @@
       "id": "health.title",
       "kind": "label",
       "text": "System health",
-      "surface_location": "Health/heading"
+      "surface_location": "Health/heading",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "health.intro",
       "kind": "onboarding",
       "text": "Every external dependency, checked live. This page and the API are served by the same Worker.",
-      "surface_location": "Health/intro paragraph"
+      "surface_location": "Health/intro paragraph",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "technical_reference",
+      "interpolations": []
     },
     {
       "id": "health.loading",
       "kind": "label",
-      "text": "Running checks (a cold container start can take a minute)…",
-      "surface_location": "Health/loading state"
+      "text": "Running checks (a cold container start can take a minute)â€¦",
+      "surface_location": "Health/loading state",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "health.all_ok",
       "kind": "label",
       "text": "All five links green.",
-      "surface_location": "Health/summary line"
+      "surface_location": "Health/summary line",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "health.not_ok",
       "kind": "label",
       "text": "At least one link is down.",
-      "surface_location": "Health/summary line"
+      "surface_location": "Health/summary line",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "health.check.worker_assets",
       "kind": "label",
       "text": "Worker + static assets",
-      "surface_location": "Health/check row"
+      "surface_location": "Health/check row",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "health.check.d1",
       "kind": "label",
       "text": "D1 write → read",
-      "surface_location": "Health/check row"
+      "surface_location": "Health/check row",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "health.check.r2",
       "kind": "label",
       "text": "R2 put → get",
-      "surface_location": "Health/check row"
+      "surface_location": "Health/check row",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "health.check.kernel",
       "kind": "label",
       "text": "Container kernel (pandas)",
-      "surface_location": "Health/check row"
+      "surface_location": "Health/check row",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "health.check.anthropic",
       "kind": "label",
       "text": "Anthropic API",
-      "surface_location": "Health/check row"
+      "surface_location": "Health/check row",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "health.duration",
+      "kind": "label",
+      "text": "{ms} ms",
+      "surface_location": "Health/check table",
+      "references_facts": [],
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": [
+        "ms"
+      ]
     }
   ]
 }

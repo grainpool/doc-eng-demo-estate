@@ -4,109 +4,197 @@
       "id": "session.open",
       "kind": "label",
       "text": "Analyze",
-      "surface_location": "ProjectDetail/file row action"
+      "surface_location": "ProjectDetail/file row action",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.list.heading",
       "kind": "label",
       "text": "Analysis sessions",
-      "surface_location": "ProjectDetail/sessions section"
+      "surface_location": "ProjectDetail/sessions section",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.list.empty",
       "kind": "empty_state",
       "text": "No analysis sessions yet. Pick a file and ask a question about it.",
-      "surface_location": "ProjectDetail/sessions section"
+      "surface_location": "ProjectDetail/sessions section",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.back",
       "kind": "label",
       "text": "Back to project",
-      "surface_location": "Session/header"
+      "surface_location": "Session/header",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.preview.heading",
       "kind": "label",
       "text": "Dataset preview",
-      "surface_location": "Session/preview table"
+      "surface_location": "Session/preview table",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.preview.loading",
       "kind": "label",
       "text": "Loading preview…",
-      "surface_location": "Session/preview table"
+      "surface_location": "Session/preview table",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.prompt.placeholder",
       "kind": "label",
       "text": "Ask about this data — e.g. \"which columns correlate?\"",
-      "surface_location": "Session/prompt box"
+      "surface_location": "Session/prompt box",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.prompt.submit",
       "kind": "label",
       "text": "Run",
-      "surface_location": "Session/prompt box"
+      "surface_location": "Session/prompt box",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.prompt.running",
       "kind": "label",
       "text": "Translating and running…",
-      "surface_location": "Session/prompt box"
+      "surface_location": "Session/prompt box",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.turns.empty",
       "kind": "empty_state",
       "text": "No questions asked yet.",
-      "surface_location": "Session/turn list"
+      "surface_location": "Session/turn list",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.turn.operation_label",
       "kind": "label",
       "text": "Ran {operation_id}",
-      "surface_location": "Session/turn result header"
+      "surface_location": "Session/turn result header",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": [
+        "operation_id"
+      ]
     },
     {
       "id": "session.turn.refused_heading",
       "kind": "label",
       "text": "Not supported",
-      "surface_location": "Session/turn refusal"
+      "surface_location": "Session/turn refusal",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.turn.alternatives",
       "kind": "label",
       "text": "Supported instead: {alternatives}",
-      "surface_location": "Session/turn refusal"
+      "surface_location": "Session/turn refusal",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": [
+        "alternatives"
+      ]
     },
     {
       "id": "session.turn.failed_heading",
       "kind": "label",
       "text": "This question failed",
-      "surface_location": "Session/turn error"
+      "surface_location": "Session/turn error",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.result.truncated",
       "kind": "label",
       "text": "Showing the first rows — the full result was truncated.",
-      "surface_location": "Session/result table"
+      "surface_location": "Session/result table",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.result.plot_alt",
       "kind": "label",
       "text": "Generated {kind} plot",
-      "surface_location": "Session/result plot"
+      "surface_location": "Session/result plot",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": [
+        "kind"
+      ]
     },
     {
       "id": "session.narrate",
       "kind": "label",
       "text": "Explain these numbers",
-      "surface_location": "Session/turn result"
+      "surface_location": "Session/turn result",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "session.narrating",
       "kind": "label",
       "text": "Summarizing…",
-      "surface_location": "Session/turn result"
+      "surface_location": "Session/turn result",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "references_facts": [],
+      "owner": "product-content",
+      "interpolations": [],
+      "id": "session.tooltip.chain",
+      "kind": "tooltip",
+      "editorial_register": "terse_ui",
+      "text": "Chain analyses by running on a previous result table.",
+      "surface_location": "Session/chain selector tooltip"
     }
   ]
 }

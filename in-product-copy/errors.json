@@ -4,73 +4,129 @@
       "id": "error.upload.too_large",
       "kind": "error",
       "text": "This file is larger than the {max_size_human} upload limit.",
-      "surface_location": "FileUploader/rejection banner"
+      "surface_location": "FileUploader/rejection banner",
+      "references_facts": [
+        "limit.upload.csv.max_bytes"
+      ],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": [
+        "max_size_human"
+      ]
     },
     {
       "id": "error.upload.unsupported_type",
       "kind": "error",
       "text": "That file type isn't supported. Upload a .csv or .tsv file.",
-      "surface_location": "FileUploader/rejection banner"
+      "surface_location": "FileUploader/rejection banner",
+      "references_facts": [
+        "support.file_type.csv",
+        "support.file_type.tsv",
+        "support.file_type.xlsx"
+      ],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
     },
     {
       "id": "error.upload.missing_file",
       "kind": "validation",
       "text": "Choose a file to upload.",
-      "surface_location": "FileUploader/rejection banner"
+      "surface_location": "FileUploader/rejection banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "error.validation.required_field",
       "kind": "validation",
       "text": "This field is required.",
-      "surface_location": "forms/inline field error"
+      "surface_location": "forms/inline field error",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "error.generic.not_found",
       "kind": "error",
       "text": "That wasn't found. It may have been removed.",
-      "surface_location": "any screen/error banner"
+      "surface_location": "any screen/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "error.generic.internal",
       "kind": "error",
       "text": "Something went wrong on our side. Try again in a moment.",
-      "surface_location": "any screen/error banner"
+      "surface_location": "any screen/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "error.analysis.kernel_unavailable",
       "kind": "error",
       "text": "The analysis engine is unavailable right now. Try again in a moment.",
-      "surface_location": "analysis/error banner"
+      "surface_location": "analysis/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
     },
     {
       "id": "error.analysis.invalid_params",
       "kind": "validation",
       "text": "Those analysis settings aren't valid for this operation.",
-      "surface_location": "analysis/error banner"
+      "surface_location": "analysis/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "error.analysis.kernel_rejected",
       "kind": "error",
       "text": "The analysis engine couldn't run that on this file.",
-      "surface_location": "analysis/error banner"
+      "surface_location": "analysis/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "error.analysis.unsupported_request",
       "kind": "error",
       "text": "That can't be run as one of Relay's analysis operations.",
-      "surface_location": "session/turn refusal banner"
+      "surface_location": "session/turn refusal banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
     },
     {
       "id": "error.analysis.model_unavailable",
       "kind": "error",
       "text": "The language model is unavailable right now. Try again in a moment.",
-      "surface_location": "session/error banner"
+      "surface_location": "session/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     },
     {
       "id": "error.generic.network",
       "kind": "error",
       "text": "Relay couldn't be reached. Check your connection and try again.",
-      "surface_location": "any screen/error banner"
+      "surface_location": "any screen/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     }
   ]
 }
