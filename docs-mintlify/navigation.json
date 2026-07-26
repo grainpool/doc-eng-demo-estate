@@ -31,7 +31,7 @@
         },
         {
           "group": "Changes",
-          "$ref": "./navigation-generated.json"
+          "$ref": "./generated/navigation.json"
         }
       ]
     }
