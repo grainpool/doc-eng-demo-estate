@@ -11,13 +11,15 @@ Usage: relay files [options] [command]
 List, upload, and inspect a project's data files.
 
 Options:
-  -h, --help                 display help for command
+  -h, --help                   display help for command
 
 Commands:
-  list <projectId>           List a project's files
-  upload <projectId> <path>  Upload a CSV or TSV file
-  show <fileId>              Show one file
-  help [command]             display help for command
+  list <projectId>             List a project's files
+  upload <projectId> <path>    Upload a CSV or TSV file
+  show <fileId>                Show one file
+  download [options] <fileId>  Download an uploaded file
+  delete [options] <fileId>    Delete an uploaded file
+  help [command]               display help for command
 
 Examples:
   $ relay files list prj_01abc
@@ -110,5 +112,68 @@ Examples:
 
 ```
 $ relay files show fil_01abc
+```
+
+
+## files download
+
+Download an uploaded file.
+
+```
+Usage: relay files download [options] <fileId>
+
+Download an uploaded file's bytes to a local path.
+
+Arguments:
+  fileId        file id (fil_…)
+
+Options:
+  --out <path>  output path (defaults to the uploaded filename)
+  -h, --help    display help for command
+
+Examples:
+  $ relay files download fil_01abc --out ./data.csv
+```
+
+| flag | type | required | default | description |
+|---|---|---|---|---|
+| `--out` | string | no | — | output path (defaults to the uploaded filename) |
+
+Examples:
+
+```
+$ relay files download fil_01abc --out ./data.csv
+```
+
+
+## files delete
+
+Delete an uploaded file.
+
+```
+Usage: relay files delete [options] <fileId>
+
+Permanently delete an uploaded file. Refused while an analysis session
+references it. Requires --yes.
+
+Arguments:
+  fileId      file id (fil_…)
+
+Options:
+  --yes       confirm the permanent deletion
+  -h, --help  display help for command
+
+Examples:
+  $ relay files delete fil_01abc --yes
+```
+
+| flag | type | required | default | description |
+|---|---|---|---|---|
+| `--yes` | boolean | no | — | confirm the permanent deletion |
+
+Examples:
+
+```
+$ relay files delete fil_01abc --yes
 ```
 

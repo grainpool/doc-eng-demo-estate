@@ -40,7 +40,8 @@ Show resolved configuration.
 ```
 Usage: relay config show [options]
 
-Show the API URL and whether a token is set (never the token itself).
+Show the API URL, whether a token is set (never the token itself), and whether a
+demo-workspace identity has been saved.
 
 Options:
   -h, --help  display help for command

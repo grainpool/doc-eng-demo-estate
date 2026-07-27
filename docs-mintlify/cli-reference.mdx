@@ -83,13 +83,17 @@ Usage: relay projects [options] [command]
 List, create, and inspect Relay projects.
 
 Options:
-  -h, --help        display help for command
+  -h, --help                    display help for command
 
 Commands:
-  list              List all projects
-  create [options]  Create a project
-  show <projectId>  Show one project
-  help [command]    display help for command
+  list                          List all projects
+  create [options]              Create a project
+  show <projectId>              Show one project
+  rename [options] <projectId>  Rename a project
+  archive <projectId>           Archive a project
+  unarchive <projectId>         Unarchive a project
+  delete [options] <projectId>  Delete a project and everything in it
+  help [command]                display help for command
 
 Examples:
   $ relay projects list
@@ -189,6 +193,123 @@ $ relay projects show prj_01abc
 ```
 
 
+## projects rename
+
+Rename a project.
+
+```
+Usage: relay projects rename [options] <projectId>
+
+Rename a project and/or update its description.
+
+Arguments:
+  projectId             project id (prj_…)
+
+Options:
+  --name <name>         new project name
+  --description <text>  new description
+  -h, --help            display help for command
+
+Examples:
+  $ relay projects rename prj_01abc --name "Q4 data"
+```
+
+| flag | type | required | default | description |
+|---|---|---|---|---|
+| `--name` | string | no | — | new project name |
+| `--description` | string | no | — | new description |
+
+Examples:
+
+```
+$ relay projects rename prj_01abc --name "Q4 data"
+```
+
+
+## projects archive
+
+Archive a project.
+
+```
+Usage: relay projects archive [options] <projectId>
+
+Archive a project: it stays readable but rejects new writes.
+
+Arguments:
+  projectId   project id (prj_…)
+
+Options:
+  -h, --help  display help for command
+
+Examples:
+  $ relay projects archive prj_01abc
+```
+
+Examples:
+
+```
+$ relay projects archive prj_01abc
+```
+
+
+## projects unarchive
+
+Unarchive a project.
+
+```
+Usage: relay projects unarchive [options] <projectId>
+
+Restore an archived project to the active state.
+
+Arguments:
+  projectId   project id (prj_…)
+
+Options:
+  -h, --help  display help for command
+
+Examples:
+  $ relay projects unarchive prj_01abc
+```
+
+Examples:
+
+```
+$ relay projects unarchive prj_01abc
+```
+
+
+## projects delete
+
+Delete a project and everything in it.
+
+```
+Usage: relay projects delete [options] <projectId>
+
+Permanently delete a project with all its files, sessions, conversations, and
+artifacts. Requires --yes.
+
+Arguments:
+  projectId   project id (prj_…)
+
+Options:
+  --yes       confirm the permanent, cascading deletion
+  -h, --help  display help for command
+
+Examples:
+  $ relay projects delete prj_01abc --yes
+```
+
+| flag | type | required | default | description |
+|---|---|---|---|---|
+| `--yes` | boolean | no | — | confirm the permanent, cascading deletion |
+
+Examples:
+
+```
+$ relay projects delete prj_01abc --yes
+```
+
+
 ## files
 
 Work with uploaded files.
@@ -199,13 +320,15 @@ Usage: relay files [options] [command]
 List, upload, and inspect a project's data files.
 
 Options:
-  -h, --help                 display help for command
+  -h, --help                   display help for command
 
 Commands:
-  list <projectId>           List a project's files
-  upload <projectId> <path>  Upload a CSV or TSV file
-  show <fileId>              Show one file
-  help [command]             display help for command
+  list <projectId>             List a project's files
+  upload <projectId> <path>    Upload a CSV or TSV file
+  show <fileId>                Show one file
+  download [options] <fileId>  Download an uploaded file
+  delete [options] <fileId>    Delete an uploaded file
+  help [command]               display help for command
 
 Examples:
   $ relay files list prj_01abc
@@ -298,6 +421,69 @@ Examples:
 
 ```
 $ relay files show fil_01abc
+```
+
+
+## files download
+
+Download an uploaded file.
+
+```
+Usage: relay files download [options] <fileId>
+
+Download an uploaded file's bytes to a local path.
+
+Arguments:
+  fileId        file id (fil_…)
+
+Options:
+  --out <path>  output path (defaults to the uploaded filename)
+  -h, --help    display help for command
+
+Examples:
+  $ relay files download fil_01abc --out ./data.csv
+```
+
+| flag | type | required | default | description |
+|---|---|---|---|---|
+| `--out` | string | no | — | output path (defaults to the uploaded filename) |
+
+Examples:
+
+```
+$ relay files download fil_01abc --out ./data.csv
+```
+
+
+## files delete
+
+Delete an uploaded file.
+
+```
+Usage: relay files delete [options] <fileId>
+
+Permanently delete an uploaded file. Refused while an analysis session
+references it. Requires --yes.
+
+Arguments:
+  fileId      file id (fil_…)
+
+Options:
+  --yes       confirm the permanent deletion
+  -h, --help  display help for command
+
+Examples:
+  $ relay files delete fil_01abc --yes
+```
+
+| flag | type | required | default | description |
+|---|---|---|---|---|
+| `--yes` | boolean | no | — | confirm the permanent deletion |
+
+Examples:
+
+```
+$ relay files delete fil_01abc --yes
 ```
 
 
@@ -588,7 +774,8 @@ Show resolved configuration.
 ```
 Usage: relay config show [options]
 
-Show the API URL and whether a token is set (never the token itself).
+Show the API URL, whether a token is set (never the token itself), and whether a
+demo-workspace identity has been saved.
 
 Options:
   -h, --help  display help for command

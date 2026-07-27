@@ -147,6 +147,36 @@
       "owner": "eng-platform",
       "editorial_register": "friendly_help",
       "interpolations": []
+    },
+    {
+      "id": "error.workspace.seed_read_only",
+      "kind": "error",
+      "text": "This is Relay's built-in demo content, so it can't be changed. Create your own project to experiment.",
+      "surface_location": "any screen/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "error.project.archived",
+      "kind": "error",
+      "text": "This project is archived. Unarchive it to make changes.",
+      "surface_location": "project screens/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "error.file.in_use",
+      "kind": "error",
+      "text": "An analysis session still uses this file, so it can't be deleted. Delete that session first.",
+      "surface_location": "project files/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
     }
   ]
 }

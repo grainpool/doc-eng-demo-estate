@@ -168,6 +168,38 @@
       "owner": "product-content",
       "editorial_register": "terse_ui",
       "interpolations": []
+    },
+    {
+      "id": "files.actions.download",
+      "kind": "label",
+      "text": "Download",
+      "surface_location": "ProjectDetail/file row actions",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "files.actions.delete",
+      "kind": "label",
+      "text": "Delete",
+      "surface_location": "ProjectDetail/file row actions",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "files.delete.confirm",
+      "kind": "validation",
+      "text": "Delete {name}? This can't be undone.",
+      "surface_location": "ProjectDetail/file delete confirmation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": [
+        "name"
+      ]
     }
   ]
 }
