@@ -62,6 +62,26 @@
       "editorial_register": "technical_reference",
       "text": "Relay calls a unit of analysis work a Task inside a Project; outputs are Artifacts.",
       "surface_location": "Settings/terminology section"
+    },
+    {
+      "id": "settings.about.heading",
+      "kind": "label",
+      "text": "About Relay",
+      "surface_location": "Settings/about section heading",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "settings.health.link",
+      "kind": "label",
+      "text": "Service health",
+      "surface_location": "Settings/health link",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     }
   ]
 }

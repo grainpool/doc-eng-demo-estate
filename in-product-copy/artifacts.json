@@ -139,6 +139,26 @@
       "interpolations": []
     },
     {
+      "id": "artifacts.browse.intro",
+      "kind": "onboarding",
+      "text": "Every analysis result is saved as a durable artifact with full provenance — what produced it, from which data, with which runtime.",
+      "surface_location": "ArtifactsBrowse/intro",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "artifacts.browse.empty",
+      "kind": "empty_state",
+      "text": "No artifacts in your workspace yet. Run an analysis to produce some.",
+      "surface_location": "ArtifactsBrowse/empty",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
       "id": "session.turn.artifacts",
       "kind": "label",
       "text": "Saved artifacts:",

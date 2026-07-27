@@ -195,6 +195,46 @@
       "editorial_register": "terse_ui",
       "text": "Chain analyses by running on a previous result table.",
       "surface_location": "Session/chain selector tooltip"
+    },
+    {
+      "id": "analysis.entry.intro",
+      "kind": "onboarding",
+      "text": "Bounded, reproducible data analysis: pick a project and a dataset, then ask questions in plain language. Every result becomes a durable artifact with full provenance.",
+      "surface_location": "AnalysisEntry/intro",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "analysis.entry.recent",
+      "kind": "label",
+      "text": "Recent sessions",
+      "surface_location": "AnalysisEntry/recent list heading",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "analysis.entry.none",
+      "kind": "empty_state",
+      "text": "No analysis sessions yet. Open a project and choose a dataset to start one.",
+      "surface_location": "AnalysisEntry/recent list",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "analysis.entry.start",
+      "kind": "label",
+      "text": "Start an analysis",
+      "surface_location": "AnalysisEntry/start heading",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     }
   ]
 }

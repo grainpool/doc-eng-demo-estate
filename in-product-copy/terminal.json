@@ -1,0 +1,29 @@
+{
+  "entries": [
+    {
+      "id": "terminal.placeholder.title",
+      "kind": "empty_state",
+      "text": "The browser terminal isn't available yet",
+      "surface_location": "Terminal/placeholder",
+      "references_facts": [
+        "availability.feature.terminal.platform.web"
+      ],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "terminal.placeholder.body",
+      "kind": "empty_state",
+      "text": "Relay's command surface is available today through the installable CLI. A terminal that runs the same commands right here in the browser is on its way.",
+      "surface_location": "Terminal/placeholder",
+      "references_facts": [
+        "availability.feature.terminal.platform.web",
+        "availability.feature.analysis_sessions.platform.cli"
+      ],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    }
+  ]
+}
