@@ -634,6 +634,7 @@ Commands:
   list <projectId>                 List a project's artifacts
   show <artifactId>                Show an artifact with its provenance
   download [options] <artifactId>  Download an artifact
+  delete [options] <artifactId>    Delete an artifact
   help [command]                   display help for command
 
 Examples:
@@ -732,6 +733,38 @@ Examples:
 
 ```
 $ relay artifacts download art_01abc --out ./correlation.csv
+```
+
+
+## artifacts delete
+
+Delete an artifact.
+
+```
+Usage: relay artifacts delete [options] <artifactId>
+
+Permanently delete an artifact and its stored bytes. Provenance of other
+artifacts is unaffected. Requires --yes.
+
+Arguments:
+  artifactId  artifact id (art_…)
+
+Options:
+  --yes       confirm the permanent deletion
+  -h, --help  display help for command
+
+Examples:
+  $ relay artifacts delete art_01abc --yes
+```
+
+| flag | type | required | default | description |
+|---|---|---|---|---|
+| `--yes` | boolean | no | — | confirm the permanent deletion |
+
+Examples:
+
+```
+$ relay artifacts delete art_01abc --yes
 ```
 
 
