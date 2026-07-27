@@ -1,0 +1,114 @@
+{
+  "entries": [
+    {
+      "id": "nav.chat",
+      "kind": "label",
+      "text": "Chat",
+      "surface_location": "AppShell/primary navigation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "nav.projects",
+      "kind": "label",
+      "text": "Projects",
+      "surface_location": "AppShell/primary navigation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "nav.analysis",
+      "kind": "label",
+      "text": "Analysis",
+      "surface_location": "AppShell/primary navigation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "nav.terminal",
+      "kind": "label",
+      "text": "Terminal",
+      "surface_location": "AppShell/primary navigation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "nav.artifacts",
+      "kind": "label",
+      "text": "Artifacts",
+      "surface_location": "AppShell/primary navigation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "nav.settings",
+      "kind": "label",
+      "text": "Settings",
+      "surface_location": "AppShell/primary navigation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "nav.menu",
+      "kind": "label",
+      "text": "Menu",
+      "surface_location": "AppShell/narrow-viewport nav toggle",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "workspace.banner.label",
+      "kind": "label",
+      "text": "Anonymous demo workspace",
+      "surface_location": "Settings/workspace section heading",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "settings.facts.key",
+      "kind": "label",
+      "text": "Fact",
+      "surface_location": "Settings/product facts table header",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "settings.facts.value",
+      "kind": "label",
+      "text": "Value",
+      "surface_location": "Settings/product facts table header",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "workspace.banner",
+      "kind": "onboarding",
+      "text": "Relay is a public demo. Everything you create lives in an anonymous workspace tied to a cookie in this browser — other visitors can't see it, and you can delete it at any time. The demo may be reset, so don't upload anything confidential.",
+      "surface_location": "Settings/workspace section + first-run banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    }
+  ]
+}

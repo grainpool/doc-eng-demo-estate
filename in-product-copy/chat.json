@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "id": "chat.placeholder.title",
+      "kind": "empty_state",
+      "text": "Chat isn't available yet",
+      "surface_location": "Chat/placeholder",
+      "references_facts": [
+        "availability.feature.chat.platform.web"
+      ],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.placeholder.body",
+      "kind": "empty_state",
+      "text": "A streaming assistant conversation surface is on its way to this workspace. Until it arrives, Analysis answers plain-language questions about your data.",
+      "surface_location": "Chat/placeholder",
+      "references_facts": [
+        "availability.feature.chat.platform.web"
+      ],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    }
+  ]
+}
