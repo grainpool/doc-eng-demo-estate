@@ -1,26 +1,186 @@
 {
   "entries": [
     {
-      "id": "chat.placeholder.title",
-      "kind": "empty_state",
-      "text": "Chat isn't available yet",
-      "surface_location": "Chat/placeholder",
-      "references_facts": [
-        "availability.feature.chat.platform.web"
-      ],
+      "id": "chat.default_title",
+      "kind": "label",
+      "text": "New conversation",
+      "surface_location": "Chat/thread list + server default title",
+      "references_facts": [],
       "owner": "product-content",
       "editorial_register": "terse_ui",
       "interpolations": []
     },
     {
-      "id": "chat.placeholder.body",
+      "id": "chat.list.heading",
+      "kind": "label",
+      "text": "Conversations",
+      "surface_location": "Chat/thread list heading",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.list.empty",
       "kind": "empty_state",
-      "text": "A streaming assistant conversation surface is on its way to this workspace. Until it arrives, Analysis answers plain-language questions about your data.",
-      "surface_location": "Chat/placeholder",
+      "text": "No conversations yet.",
+      "surface_location": "Chat/thread list",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.new",
+      "kind": "label",
+      "text": "New conversation",
+      "surface_location": "Chat/new conversation button",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.loading",
+      "kind": "label",
+      "text": "Loading…",
+      "surface_location": "Chat/loading states",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.thread.empty",
+      "kind": "empty_state",
+      "text": "Ask anything to get started. For statistics on an uploaded dataset, the Analysis surface runs bounded, reproducible operations.",
+      "surface_location": "Chat/empty thread",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "chat.composer.placeholder",
+      "kind": "label",
+      "text": "Message Relay…",
+      "surface_location": "Chat/composer input placeholder",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.composer.send",
+      "kind": "label",
+      "text": "Send",
+      "surface_location": "Chat/composer",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.composer.stop",
+      "kind": "label",
+      "text": "Stop",
+      "surface_location": "Chat/composer while streaming",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.actions.rename",
+      "kind": "label",
+      "text": "Rename",
+      "surface_location": "Chat/thread actions",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.actions.delete",
+      "kind": "label",
+      "text": "Delete",
+      "surface_location": "Chat/thread actions",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.delete.confirm",
+      "kind": "validation",
+      "text": "Delete this conversation? Its messages are removed permanently.",
+      "surface_location": "Chat/delete confirmation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.project.label",
+      "kind": "label",
+      "text": "Project context",
+      "surface_location": "Chat/project association picker",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.project.none",
+      "kind": "label",
+      "text": "No project",
+      "surface_location": "Chat/project association picker",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "chat.project.help",
+      "kind": "tooltip",
+      "text": "Linking a project shares its file list and small data previews with the assistant as context.",
+      "surface_location": "Chat/project association picker",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "chat.error.generic",
+      "kind": "error",
+      "text": "The response didn't complete. You can send your message again.",
+      "surface_location": "Chat/error banner",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "error.chat.unavailable",
+      "kind": "error",
+      "text": "Chat isn't available on this deployment right now.",
+      "surface_location": "Chat/unavailable state",
       "references_facts": [
         "availability.feature.chat.platform.web"
       ],
-      "owner": "product-content",
+      "owner": "eng-platform",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "error.chat.message_too_long",
+      "kind": "error",
+      "text": "That message is longer than Relay's per-message limit. Shorten it and try again.",
+      "surface_location": "Chat/composer error",
+      "references_facts": [
+        "limit.chat.message.max_chars"
+      ],
+      "owner": "eng-platform",
       "editorial_register": "friendly_help",
       "interpolations": []
     }
