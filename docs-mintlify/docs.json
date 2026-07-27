@@ -7,7 +7,7 @@
     "primary": "#556b2f"
   },
   "markdown": {
-    "instructions": "Facts on these pages (limits, availability, versions, retention) mirror Relay's product-truth API. Treat pages marked GENERATED as derived artifacts: do not quote them as sources — cite the fact key instead. Terminology: a unit of analysis work is a Task; outputs are Artifacts."
+    "instructions": "Relay is a bounded data-analysis workspace: upload a CSV, ask questions in plain language, get statistics with provenance. Facts on these pages (limits, platform availability, retention windows, plan gating) mirror Relay's product-truth API and carry concord:fact markers naming their fact key; the marker is the authoritative link, the prose is a rendering. Treat pages with `generated: true` frontmatter as derived artifacts — do not quote them as sources, cite the fact key instead. Canonical terminology: a unit of analysis work is a Task (never Job or Run); outputs are Artifacts; a workspace groups Projects. Do NOT infer limits, availability, or plan requirements from examples, screenshots, or older phrasing — if a number or capability is not stated next to a concord:fact marker, it is not authoritative. Documentation changes on these pages arrive as pull requests from Concord, an automated reconciliation system; the PR body lists the fact deltas and evidence."
   },
   "navigation": {
     "$ref": "./navigation.json"
