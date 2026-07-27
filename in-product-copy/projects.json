@@ -214,6 +214,26 @@
       "interpolations": []
     },
     {
+      "id": "projects.conversations.heading",
+      "kind": "label",
+      "text": "Conversations",
+      "surface_location": "ProjectDetail/conversations section",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "projects.conversations.empty",
+      "kind": "empty_state",
+      "text": "No conversations reference this project yet. Link one from Chat's project-context picker.",
+      "surface_location": "ProjectDetail/conversations section",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
       "id": "projects.delete.mismatch",
       "kind": "validation",
       "text": "That doesn't match the project name.",

@@ -159,6 +159,78 @@
       "interpolations": []
     },
     {
+      "id": "artifacts.filter.all_projects",
+      "kind": "label",
+      "text": "All projects",
+      "surface_location": "ArtifactsBrowse/project filter",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "artifacts.filter.all_kinds",
+      "kind": "label",
+      "text": "All kinds",
+      "surface_location": "ArtifactsBrowse/kind filter",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "artifacts.filter.kind",
+      "kind": "label",
+      "text": "Kind",
+      "surface_location": "ArtifactsBrowse/kind column + filter",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "artifacts.actions.delete",
+      "kind": "label",
+      "text": "Delete",
+      "surface_location": "ArtifactDetail/actions",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "artifacts.delete.confirm",
+      "kind": "validation",
+      "text": "Delete {name}? The stored bytes are removed permanently; other artifacts' provenance is unaffected.",
+      "surface_location": "ArtifactDetail/delete confirmation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": [
+        "name"
+      ]
+    },
+    {
+      "id": "artifact.session_link",
+      "kind": "label",
+      "text": "View the session that produced this artifact",
+      "surface_location": "ArtifactDetail/session link",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "artifact.session_removed",
+      "kind": "label",
+      "text": "The session that produced this artifact was deleted — its provenance record remains.",
+      "surface_location": "ArtifactDetail/defunct session state",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
       "id": "session.turn.artifacts",
       "kind": "label",
       "text": "Saved artifacts:",
