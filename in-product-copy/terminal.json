@@ -1,10 +1,10 @@
 {
   "entries": [
     {
-      "id": "terminal.placeholder.title",
-      "kind": "empty_state",
-      "text": "The browser terminal isn't available yet",
-      "surface_location": "Terminal/placeholder",
+      "id": "terminal.welcome",
+      "kind": "onboarding",
+      "text": "Relay terminal — the same command surface as the installable CLI. Try: help, projects list, config status.",
+      "surface_location": "Terminal/first line",
       "references_facts": [
         "availability.feature.terminal.platform.web"
       ],
@@ -13,16 +13,99 @@
       "interpolations": []
     },
     {
-      "id": "terminal.placeholder.body",
-      "kind": "empty_state",
-      "text": "Relay's command surface is available today through the installable CLI. A terminal that runs the same commands right here in the browser is on its way.",
-      "surface_location": "Terminal/placeholder",
-      "references_facts": [
-        "availability.feature.terminal.platform.web",
-        "availability.feature.analysis_sessions.platform.cli"
-      ],
+      "id": "terminal.help.heading",
+      "kind": "label",
+      "text": "Commands available in the browser terminal:",
+      "surface_location": "Terminal/help output",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "terminal.help.locals",
+      "kind": "label",
+      "text": "Also: help [command], clear, history. Full reference: relay --help in the installed CLI.",
+      "surface_location": "Terminal/help output footer",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "terminal.unknown",
+      "kind": "error",
+      "text": "Unknown command: {command}. Type help to see what's supported.",
+      "surface_location": "Terminal/error output",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": [
+        "command"
+      ]
+    },
+    {
+      "id": "terminal.suggestion",
+      "kind": "label",
+      "text": "Did you mean: {command}?",
+      "surface_location": "Terminal/error output",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": [
+        "command"
+      ]
+    },
+    {
+      "id": "terminal.unbound",
+      "kind": "label",
+      "text": "{command} is available in the installable Relay CLI, but not in the browser terminal.",
+      "surface_location": "Terminal/unbound command output",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": [
+        "command"
+      ]
+    },
+    {
+      "id": "terminal.bad_args",
+      "kind": "validation",
+      "text": "Missing or invalid arguments:",
+      "surface_location": "Terminal/error output (followed by usage)",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "terminal.upload_pointer",
+      "kind": "label",
+      "text": "Uploading isn't available in the browser terminal — use the Projects screen or the installed CLI.",
+      "surface_location": "Terminal/files upload pointer",
+      "references_facts": [],
       "owner": "product-content",
       "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "terminal.download_started",
+      "kind": "label",
+      "text": "Download started in your browser.",
+      "surface_location": "Terminal/download commands",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "terminal.confirm_yes",
+      "kind": "validation",
+      "text": "Add --yes to confirm this permanent deletion.",
+      "surface_location": "Terminal/delete commands",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
       "interpolations": []
     }
   ]
