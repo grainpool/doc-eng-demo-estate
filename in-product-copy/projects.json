@@ -152,6 +152,76 @@
       "editorial_register": "friendly_help",
       "text": "Start by uploading a .csv or .tsv file — Relay checks the type and size for you.",
       "surface_location": "ProjectDetail/first-run hint"
+    },
+    {
+      "id": "projects.actions.rename",
+      "kind": "label",
+      "text": "Rename",
+      "surface_location": "ProjectDetail/actions",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "projects.actions.save",
+      "kind": "label",
+      "text": "Save",
+      "surface_location": "ProjectDetail/rename form",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "projects.actions.archive",
+      "kind": "label",
+      "text": "Archive",
+      "surface_location": "ProjectDetail/actions",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "projects.actions.unarchive",
+      "kind": "label",
+      "text": "Unarchive",
+      "surface_location": "ProjectDetail/actions",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "projects.actions.delete",
+      "kind": "label",
+      "text": "Delete project",
+      "surface_location": "ProjectDetail/actions",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
+    },
+    {
+      "id": "projects.delete.confirm_help",
+      "kind": "validation",
+      "text": "Deleting removes this project's files, sessions, conversations, and artifacts permanently. Type the project name to confirm.",
+      "surface_location": "ProjectDetail/delete confirmation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "friendly_help",
+      "interpolations": []
+    },
+    {
+      "id": "projects.delete.mismatch",
+      "kind": "validation",
+      "text": "That doesn't match the project name.",
+      "surface_location": "ProjectDetail/delete confirmation",
+      "references_facts": [],
+      "owner": "product-content",
+      "editorial_register": "terse_ui",
+      "interpolations": []
     }
   ]
 }

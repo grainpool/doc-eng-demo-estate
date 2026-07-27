@@ -11,13 +11,17 @@ Usage: relay projects [options] [command]
 List, create, and inspect Relay projects.
 
 Options:
-  -h, --help        display help for command
+  -h, --help                    display help for command
 
 Commands:
-  list              List all projects
-  create [options]  Create a project
-  show <projectId>  Show one project
-  help [command]    display help for command
+  list                          List all projects
+  create [options]              Create a project
+  show <projectId>              Show one project
+  rename [options] <projectId>  Rename a project
+  archive <projectId>           Archive a project
+  unarchive <projectId>         Unarchive a project
+  delete [options] <projectId>  Delete a project and everything in it
+  help [command]                display help for command
 
 Examples:
   $ relay projects list
@@ -114,5 +118,122 @@ Examples:
 
 ```
 $ relay projects show prj_01abc
+```
+
+
+## projects rename
+
+Rename a project.
+
+```
+Usage: relay projects rename [options] <projectId>
+
+Rename a project and/or update its description.
+
+Arguments:
+  projectId             project id (prj_…)
+
+Options:
+  --name <name>         new project name
+  --description <text>  new description
+  -h, --help            display help for command
+
+Examples:
+  $ relay projects rename prj_01abc --name "Q4 data"
+```
+
+| flag | type | required | default | description |
+|---|---|---|---|---|
+| `--name` | string | no | — | new project name |
+| `--description` | string | no | — | new description |
+
+Examples:
+
+```
+$ relay projects rename prj_01abc --name "Q4 data"
+```
+
+
+## projects archive
+
+Archive a project.
+
+```
+Usage: relay projects archive [options] <projectId>
+
+Archive a project: it stays readable but rejects new writes.
+
+Arguments:
+  projectId   project id (prj_…)
+
+Options:
+  -h, --help  display help for command
+
+Examples:
+  $ relay projects archive prj_01abc
+```
+
+Examples:
+
+```
+$ relay projects archive prj_01abc
+```
+
+
+## projects unarchive
+
+Unarchive a project.
+
+```
+Usage: relay projects unarchive [options] <projectId>
+
+Restore an archived project to the active state.
+
+Arguments:
+  projectId   project id (prj_…)
+
+Options:
+  -h, --help  display help for command
+
+Examples:
+  $ relay projects unarchive prj_01abc
+```
+
+Examples:
+
+```
+$ relay projects unarchive prj_01abc
+```
+
+
+## projects delete
+
+Delete a project and everything in it.
+
+```
+Usage: relay projects delete [options] <projectId>
+
+Permanently delete a project with all its files, sessions, conversations, and
+artifacts. Requires --yes.
+
+Arguments:
+  projectId   project id (prj_…)
+
+Options:
+  --yes       confirm the permanent, cascading deletion
+  -h, --help  display help for command
+
+Examples:
+  $ relay projects delete prj_01abc --yes
+```
+
+| flag | type | required | default | description |
+|---|---|---|---|---|
+| `--yes` | boolean | no | — | confirm the permanent, cascading deletion |
+
+Examples:
+
+```
+$ relay projects delete prj_01abc --yes
 ```
 
